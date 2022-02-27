@@ -10,6 +10,9 @@
 		45897FEA27CB8633003FDEB6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45897FE927CB8633003FDEB6 /* TableViewController.m */; };
 		45897FED27CB8656003FDEB6 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45897FEC27CB8656003FDEB6 /* TableViewCell.m */; };
 		45897FEF27CB8FE1003FDEB6 /* Landmark.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45897FEE27CB8FE1003FDEB6 /* Landmark.plist */; };
+		45897FF227CBB711003FDEB6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45897FF127CBB711003FDEB6 /* DetailViewController.m */; };
+		45897FF527CBC936003FDEB6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45897FF427CBC936003FDEB6 /* MapKit.framework */; };
+		45897FF827CC0490003FDEB6 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 45897FF727CC0490003FDEB6 /* MapPin.m */; };
 		45A0301927CB4E9700AB70CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A0301827CB4E9700AB70CD /* AppDelegate.m */; };
 		45A0301C27CB4E9700AB70CD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A0301B27CB4E9700AB70CD /* SceneDelegate.m */; };
 		45A0302227CB4E9700AB70CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0302027CB4E9700AB70CD /* Main.storyboard */; };
@@ -24,6 +27,11 @@
 		45897FEB27CB8656003FDEB6 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		45897FEC27CB8656003FDEB6 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		45897FEE27CB8FE1003FDEB6 /* Landmark.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Landmark.plist; sourceTree = "<group>"; };
+		45897FF027CBB711003FDEB6 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		45897FF127CBB711003FDEB6 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		45897FF427CBC936003FDEB6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		45897FF627CC0490003FDEB6 /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		45897FF727CC0490003FDEB6 /* MapPin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 		45A0301427CB4E9700AB70CD /* LondonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LondonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A0301727CB4E9700AB70CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45A0301827CB4E9700AB70CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,17 +49,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45897FF527CBC936003FDEB6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45897FF327CBC936003FDEB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45897FF427CBC936003FDEB6 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		45A0300B27CB4E9700AB70CD = {
 			isa = PBXGroup;
 			children = (
 				45A0301627CB4E9700AB70CD /* LondonApp */,
 				45A0301527CB4E9700AB70CD /* Products */,
+				45897FF327CBC936003FDEB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +92,10 @@
 				45897FE927CB8633003FDEB6 /* TableViewController.m */,
 				45897FEB27CB8656003FDEB6 /* TableViewCell.h */,
 				45897FEC27CB8656003FDEB6 /* TableViewCell.m */,
+				45897FF027CBB711003FDEB6 /* DetailViewController.h */,
+				45897FF127CBB711003FDEB6 /* DetailViewController.m */,
+				45897FF627CC0490003FDEB6 /* MapPin.h */,
+				45897FF727CC0490003FDEB6 /* MapPin.m */,
 				45A0302027CB4E9700AB70CD /* Main.storyboard */,
 				45897FEE27CB8FE1003FDEB6 /* Landmark.plist */,
 				45A0302327CB4E9900AB70CD /* Assets.xcassets */,
@@ -158,8 +180,10 @@
 				45A0301927CB4E9700AB70CD /* AppDelegate.m in Sources */,
 				45A0302A27CB4E9900AB70CD /* main.m in Sources */,
 				45A0301C27CB4E9700AB70CD /* SceneDelegate.m in Sources */,
+				45897FF827CC0490003FDEB6 /* MapPin.m in Sources */,
 				45897FED27CB8656003FDEB6 /* TableViewCell.m in Sources */,
 				45897FEA27CB8633003FDEB6 /* TableViewController.m in Sources */,
+				45897FF227CBB711003FDEB6 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

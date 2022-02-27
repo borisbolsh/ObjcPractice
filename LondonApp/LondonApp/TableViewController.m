@@ -1,5 +1,6 @@
 #import "TableViewController.h"
 #import "TableViewCell.h"
+#import "DetailViewController.h"
 
 @interface TableViewController ()
 
@@ -14,12 +15,15 @@
     statusBar.backgroundColor = [UIColor systemPurpleColor];
     [[UIApplication sharedApplication].keyWindow addSubview:statusBar];
 
-    self.tableView.rowHeight = 146;
+    self.tableView.rowHeight = 120;
 
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Landmark" ofType:@"plist"];
 
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     dataSelect = dict[@"Places"];
+
+    [[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil]];
+
 }
 
 #pragma mark - Table view data source
@@ -83,14 +87,30 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+
+        DetailViewController *detailView = [segue destinationViewController];
+        NSIndexPath *myIndexpath = [self.tableView indexPathForSelectedRow];
+
+        NSDictionary *dict = dataSelect[myIndexpath.row];
+
+        detailView.detailModal = @[
+            dict[@"Title"],
+            dict[@"Address"],
+            dict[@"Image"],
+            dict[@"Description"],
+            dict[@"Latitude"],
+            dict[@"Longitude"]
+        ];
+
+    }
 }
-*/
+
 
 @end
