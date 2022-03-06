@@ -1,20 +1,15 @@
-#import "ServiceViewController.h"
+#import "AboutViewController.h"
 
-@interface ServiceViewController ()
+@interface AboutViewController ()
 
 @end
 
-@implementation ServiceViewController
+@implementation AboutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.navigationItem.title = self.detailModal[0];
-
-    self.detailTitle.text = self.detailModal[0];
-    self.detailDescription.text = self.detailModal[2];
-
-    self.detailImage.image = [UIImage imageNamed:self.detailModal[1]];
+    self.button1.layer.cornerRadius = 5;
 }
 
 /*
@@ -27,4 +22,7 @@
 }
 */
 
+- (IBAction)contactUs:(id)sender {
+    [(UITabBarController *) self.tabBarController setSelectedIndex:4];
+}
 @end
