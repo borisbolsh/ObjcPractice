@@ -327,30 +327,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQj-8G-wDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5208.75" y="0.0"/>
+            <point key="canvasLocation" x="3195" y="0.0"/>
         </scene>
         <!--Portfolio-->
         <scene sceneID="c9E-N4-RuW">
             <objects>
-                <collectionViewController id="STE-hD-Km9" sceneMemberID="viewController">
+                <collectionViewController id="STE-hD-Km9" customClass="PortfolioCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1o5-tr-4OP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uij-uf-KrI">
-                            <size key="itemSize" width="128" height="128"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uij-uf-KrI">
+                            <size key="itemSize" width="172" height="125"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5Nb-hg-exA">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="5Nb-hg-exA" customClass="PortfolioCollectionViewCell">
+                                <rect key="frame" x="74" y="10" width="172" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QS9-fo-bex">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="172" height="125"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="caS-XW-bjb">
+                                            <rect key="frame" x="0.0" y="0.0" width="172" height="125"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="caS-XW-bjb" secondAttribute="bottom" id="ADa-J1-iBG"/>
+                                        <constraint firstAttribute="trailing" secondItem="caS-XW-bjb" secondAttribute="trailing" id="U6l-Sh-MWP"/>
+                                        <constraint firstItem="caS-XW-bjb" firstAttribute="leading" secondItem="QS9-fo-bex" secondAttribute="leading" id="YQX-NZ-Hl1"/>
+                                        <constraint firstItem="caS-XW-bjb" firstAttribute="top" secondItem="QS9-fo-bex" secondAttribute="top" id="ZPQ-J6-lt0"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="cellImageView" destination="caS-XW-bjb" id="JhK-q2-ggB"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -358,11 +372,11 @@
                             <outlet property="delegate" destination="STE-hD-Km9" id="OB3-DM-BVb"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Portfolio" image="Tab4" id="sTi-yA-ar8"/>
+                    <navigationItem key="navigationItem" title="Portfolio" id="Gqb-0L-9iW"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1U-0c-iFG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4511.25" y="0.0"/>
+            <point key="canvasLocation" x="2505" y="728.87323943661977"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hQR-Sz-kCi">
@@ -379,7 +393,7 @@
                         <segue destination="ZnP-Us-i9R" kind="relationship" relationship="viewControllers" id="EIK-D5-ruP"/>
                         <segue destination="vYt-fI-e1C" kind="relationship" relationship="viewControllers" id="B34-tD-0Ld"/>
                         <segue destination="jYP-jD-YSN" kind="relationship" relationship="viewControllers" id="rFB-IA-bnA"/>
-                        <segue destination="STE-hD-Km9" kind="relationship" relationship="viewControllers" id="If7-xW-VEo"/>
+                        <segue destination="wCy-Fm-nn8" kind="relationship" relationship="viewControllers" id="If7-xW-VEo"/>
                         <segue destination="6ua-Xs-0gW" kind="relationship" relationship="viewControllers" id="K1a-lQ-7L0"/>
                     </connections>
                 </tabBarController>
@@ -479,6 +493,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70g-ll-6dK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1128.75" y="0.0"/>
+        </scene>
+        <!--Portfolio-->
+        <scene sceneID="IeS-il-XYN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wCy-Fm-nn8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Portfolio" image="Tab4" id="sTi-yA-ar8">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="btq-Ca-Nch">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.20392158630000001" green="0.32156863810000003" blue="0.50980395079999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.20392158630000001" green="0.32156863810000003" blue="0.50980395079999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="STE-hD-Km9" kind="relationship" relationship="rootViewController" id="M14-4q-Xx1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2vh-RM-5wg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2505" y="0.0"/>
         </scene>
     </scenes>
     <resources>

@@ -19,6 +19,8 @@
 		4536D15927CD4DDE00EDFE0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4536D15727CD4DDE00EDFE0B /* LaunchScreen.storyboard */; };
 		4536D15C27CD4DDE00EDFE0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4536D15B27CD4DDE00EDFE0B /* main.m */; };
 		457F6D6627D54C8D00EE1478 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457F6D6527D54C8D00EE1478 /* AboutViewController.m */; };
+		45F70C7927D5D0CB0018601C /* PortfolioCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F70C7827D5D0CB0018601C /* PortfolioCollectionViewController.m */; };
+		45F70C7C27D5D1C90018601C /* PortfolioCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F70C7B27D5D1C90018601C /* PortfolioCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,10 @@
 		4536D15B27CD4DDE00EDFE0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		457F6D6427D54C8D00EE1478 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		457F6D6527D54C8D00EE1478 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		45F70C7727D5D0CB0018601C /* PortfolioCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortfolioCollectionViewController.h; sourceTree = "<group>"; };
+		45F70C7827D5D0CB0018601C /* PortfolioCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortfolioCollectionViewController.m; sourceTree = "<group>"; };
+		45F70C7A27D5D1C90018601C /* PortfolioCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortfolioCollectionViewCell.h; sourceTree = "<group>"; };
+		45F70C7B27D5D1C90018601C /* PortfolioCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortfolioCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,7 @@
 				4536D14D27CD4DDC00EDFE0B /* SceneDelegate.m */,
 				4536D14F27CD4DDC00EDFE0B /* ViewController.h */,
 				4536D15027CD4DDC00EDFE0B /* ViewController.m */,
+				45F70C7027D5C5270018601C /* Portfolio */,
 				457F6D6327D54A3700EE1478 /* Aboutus */,
 				4502ABE527D07D0B00B4F60E /* Services */,
 				4536D15227CD4DDC00EDFE0B /* Main.storyboard */,
@@ -113,6 +120,17 @@
 				457F6D6527D54C8D00EE1478 /* AboutViewController.m */,
 			);
 			path = Aboutus;
+			sourceTree = "<group>";
+		};
+		45F70C7027D5C5270018601C /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				45F70C7727D5D0CB0018601C /* PortfolioCollectionViewController.h */,
+				45F70C7827D5D0CB0018601C /* PortfolioCollectionViewController.m */,
+				45F70C7A27D5D1C90018601C /* PortfolioCollectionViewCell.h */,
+				45F70C7B27D5D1C90018601C /* PortfolioCollectionViewCell.m */,
+			);
+			path = Portfolio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +205,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4502ABE827D07D4400B4F60E /* ServicesTableViewController.m in Sources */,
+				45F70C7927D5D0CB0018601C /* PortfolioCollectionViewController.m in Sources */,
 				4536D15127CD4DDC00EDFE0B /* ViewController.m in Sources */,
+				45F70C7C27D5D1C90018601C /* PortfolioCollectionViewCell.m in Sources */,
 				457F6D6627D54C8D00EE1478 /* AboutViewController.m in Sources */,
 				4502ABEE27D07D9700B4F60E /* ServiceViewController.m in Sources */,
 				4536D14B27CD4DDC00EDFE0B /* AppDelegate.m in Sources */,
