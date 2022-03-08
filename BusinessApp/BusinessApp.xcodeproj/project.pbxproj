@@ -19,6 +19,8 @@
 		4536D15927CD4DDE00EDFE0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4536D15727CD4DDE00EDFE0B /* LaunchScreen.storyboard */; };
 		4536D15C27CD4DDE00EDFE0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4536D15B27CD4DDE00EDFE0B /* main.m */; };
 		457F6D6627D54C8D00EE1478 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457F6D6527D54C8D00EE1478 /* AboutViewController.m */; };
+		45E62EAA27D7E7B0002D285A /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E62EA927D7E7B0002D285A /* ContactViewController.m */; };
+		45E62EAD27D7E984002D285A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E62EAC27D7E984002D285A /* MapKit.framework */; };
 		45F70C7927D5D0CB0018601C /* PortfolioCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F70C7827D5D0CB0018601C /* PortfolioCollectionViewController.m */; };
 		45F70C7C27D5D1C90018601C /* PortfolioCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F70C7B27D5D1C90018601C /* PortfolioCollectionViewCell.m */; };
 /* End PBXBuildFile section */
@@ -45,6 +47,9 @@
 		4536D15B27CD4DDE00EDFE0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		457F6D6427D54C8D00EE1478 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		457F6D6527D54C8D00EE1478 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		45E62EA827D7E7B0002D285A /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		45E62EA927D7E7B0002D285A /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		45E62EAC27D7E984002D285A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		45F70C7727D5D0CB0018601C /* PortfolioCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortfolioCollectionViewController.h; sourceTree = "<group>"; };
 		45F70C7827D5D0CB0018601C /* PortfolioCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortfolioCollectionViewController.m; sourceTree = "<group>"; };
 		45F70C7A27D5D1C90018601C /* PortfolioCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortfolioCollectionViewCell.h; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E62EAD27D7E984002D285A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 			children = (
 				4536D14827CD4DDC00EDFE0B /* BusinessApp */,
 				4536D14727CD4DDC00EDFE0B /* Products */,
+				45E62EAB27D7E984002D285A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +108,7 @@
 				4536D14D27CD4DDC00EDFE0B /* SceneDelegate.m */,
 				4536D14F27CD4DDC00EDFE0B /* ViewController.h */,
 				4536D15027CD4DDC00EDFE0B /* ViewController.m */,
+				45E62EA727D7E708002D285A /* ContactUs */,
 				45F70C7027D5C5270018601C /* Portfolio */,
 				457F6D6327D54A3700EE1478 /* Aboutus */,
 				4502ABE527D07D0B00B4F60E /* Services */,
@@ -120,6 +128,23 @@
 				457F6D6527D54C8D00EE1478 /* AboutViewController.m */,
 			);
 			path = Aboutus;
+			sourceTree = "<group>";
+		};
+		45E62EA727D7E708002D285A /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				45E62EA827D7E7B0002D285A /* ContactViewController.h */,
+				45E62EA927D7E7B0002D285A /* ContactViewController.m */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
+		45E62EAB27D7E984002D285A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45E62EAC27D7E984002D285A /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		45F70C7027D5C5270018601C /* Portfolio */ = {
@@ -213,6 +238,7 @@
 				4536D14B27CD4DDC00EDFE0B /* AppDelegate.m in Sources */,
 				4536D15C27CD4DDE00EDFE0B /* main.m in Sources */,
 				4536D14E27CD4DDC00EDFE0B /* SceneDelegate.m in Sources */,
+				45E62EAA27D7E7B0002D285A /* ContactViewController.m in Sources */,
 				4502ABEB27D07D5900B4F60E /* ServicesTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -316,18 +316,109 @@
         <!--Contact us-->
         <scene sceneID="TJa-e9-SkF">
             <objects>
-                <viewController id="6ua-Xs-0gW" sceneMemberID="viewController">
+                <viewController id="6ua-Xs-0gW" customClass="ContactViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q7Z-sS-tJs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="wlL-1e-MWM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-tN-6p6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="222.5"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0BJ-dB-7TH">
+                                <rect key="frame" x="16" y="232.5" width="288" height="222.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123 Street, London, United Kingdom" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6h-Le-O5d">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSB-Ar-YpQ">
+                                        <rect key="frame" x="0.0" y="47" width="288" height="35"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Directions">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.33725491169999999" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="directions:" destination="6ua-Xs-0gW" eventType="touchUpInside" id="ZJI-J1-lXJ"/>
+                                            <action selector="servicesTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xzu-EL-Jya"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBn-Xu-ltw">
+                                        <rect key="frame" x="0.0" y="94" width="288" height="34.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Call Us">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.33725491169999999" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="callUs:" destination="6ua-Xs-0gW" eventType="touchUpInside" id="iix-kX-iPq"/>
+                                            <action selector="portfolioTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lWh-mQ-SSC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKg-Jf-0UM">
+                                        <rect key="frame" x="0.0" y="140.5" width="288" height="35"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="About Us">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.33725491169999999" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="aboutUsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W2o-Wh-TsG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0e-UZ-vwr">
+                                        <rect key="frame" x="0.0" y="187.5" width="288" height="35"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Social Links">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.33725491169999999" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="contactUsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQ2-ot-kkf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Jki-Oo-cG4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0BJ-dB-7TH" firstAttribute="top" secondItem="eeE-tN-6p6" secondAttribute="bottom" constant="10" id="Cfy-LH-Yjq"/>
+                            <constraint firstItem="0BJ-dB-7TH" firstAttribute="leading" secondItem="Jki-Oo-cG4" secondAttribute="leading" constant="16" id="DV9-DU-TAZ"/>
+                            <constraint firstItem="0BJ-dB-7TH" firstAttribute="height" secondItem="eeE-tN-6p6" secondAttribute="height" id="E4w-Xt-yum"/>
+                            <constraint firstItem="eeE-tN-6p6" firstAttribute="leading" secondItem="Jki-Oo-cG4" secondAttribute="leading" id="FhX-u6-uiI"/>
+                            <constraint firstItem="Jki-Oo-cG4" firstAttribute="bottom" secondItem="0BJ-dB-7TH" secondAttribute="bottom" constant="20" id="KtL-39-GZ1"/>
+                            <constraint firstItem="wlL-1e-MWM" firstAttribute="bottom" secondItem="Jki-Oo-cG4" secondAttribute="bottom" id="Qrg-qi-BVm"/>
+                            <constraint firstItem="eeE-tN-6p6" firstAttribute="trailing" secondItem="Jki-Oo-cG4" secondAttribute="trailing" id="TB5-2P-vzP"/>
+                            <constraint firstItem="wlL-1e-MWM" firstAttribute="trailing" secondItem="Jki-Oo-cG4" secondAttribute="trailing" id="TJv-Lq-NWi"/>
+                            <constraint firstItem="Jki-Oo-cG4" firstAttribute="trailing" secondItem="0BJ-dB-7TH" secondAttribute="trailing" constant="16" id="V9t-fG-eq0"/>
+                            <constraint firstItem="eeE-tN-6p6" firstAttribute="top" secondItem="Jki-Oo-cG4" secondAttribute="top" id="tSJ-XZ-o4b"/>
+                            <constraint firstItem="wlL-1e-MWM" firstAttribute="top" secondItem="Jki-Oo-cG4" secondAttribute="top" id="v9h-Px-gCK"/>
+                            <constraint firstItem="wlL-1e-MWM" firstAttribute="leading" secondItem="Jki-Oo-cG4" secondAttribute="leading" id="wp3-zh-Mhg"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Contact us" image="Tab5" id="Khy-Fe-9Bc"/>
+                    <navigationItem key="navigationItem" title="Contact us" id="wJj-Yy-Wz4"/>
+                    <connections>
+                        <outlet property="button1" destination="FSB-Ar-YpQ" id="Vdw-Sf-W98"/>
+                        <outlet property="button2" destination="dBn-Xu-ltw" id="A5F-H5-tez"/>
+                        <outlet property="button3" destination="XKg-Jf-0UM" id="SYT-Y8-gVa"/>
+                        <outlet property="button4" destination="b0e-UZ-vwr" id="KBW-4Z-Qlo"/>
+                        <outlet property="label" destination="U6h-Le-O5d" id="xaU-H0-YIX"/>
+                        <outlet property="mapView" destination="eeE-tN-6p6" id="KEY-sP-JoR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQj-8G-wDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3195" y="0.0"/>
+            <point key="canvasLocation" x="3195" y="728.87323943661977"/>
         </scene>
         <!--Portfolio-->
         <scene sceneID="c9E-N4-RuW">
@@ -338,21 +429,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uij-uf-KrI">
-                            <size key="itemSize" width="172" height="125"/>
+                            <size key="itemSize" width="145" height="125"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="5Nb-hg-exA" customClass="PortfolioCollectionViewCell">
-                                <rect key="frame" x="74" y="10" width="172" height="125"/>
+                                <rect key="frame" x="10" y="10" width="145" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QS9-fo-bex">
-                                    <rect key="frame" x="0.0" y="0.0" width="172" height="125"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="145" height="125"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="caS-XW-bjb">
-                                            <rect key="frame" x="0.0" y="0.0" width="172" height="125"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="145" height="125"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -394,7 +485,7 @@
                         <segue destination="vYt-fI-e1C" kind="relationship" relationship="viewControllers" id="B34-tD-0Ld"/>
                         <segue destination="jYP-jD-YSN" kind="relationship" relationship="viewControllers" id="rFB-IA-bnA"/>
                         <segue destination="wCy-Fm-nn8" kind="relationship" relationship="viewControllers" id="If7-xW-VEo"/>
-                        <segue destination="6ua-Xs-0gW" kind="relationship" relationship="viewControllers" id="K1a-lQ-7L0"/>
+                        <segue destination="DFM-dA-5Tx" kind="relationship" relationship="viewControllers" id="K1a-lQ-7L0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNC-hT-Erf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -524,6 +615,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2vh-RM-5wg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2505" y="0.0"/>
+        </scene>
+        <!--Contact us-->
+        <scene sceneID="p8h-9E-oVd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DFM-dA-5Tx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contact us" image="Tab5" id="Khy-Fe-9Bc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vin-1m-ZnY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.20392158630000001" green="0.32156863810000003" blue="0.50980395079999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.20392158630000001" green="0.32156863810000003" blue="0.50980395079999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6ua-Xs-0gW" kind="relationship" relationship="rootViewController" id="KEA-EU-mlC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8t8-dw-pTG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3195" y="0.0"/>
         </scene>
     </scenes>
     <resources>
