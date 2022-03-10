@@ -1,4 +1,5 @@
 #import "ContactViewController.h"
+#import "MapPin.h"
 
 @interface ContactViewController ()
 
@@ -28,6 +29,13 @@
     region.center = location;
 
     [self.mapView setRegion:region animated:YES];
+
+    MapPin *ann = [[MapPin alloc] init];
+    ann.coordinate = location;
+    [self.mapView addAnnotation:ann];
+
+    [[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil]];
+
 }
 
 /*
@@ -41,8 +49,11 @@
 */
 
 - (IBAction)callUs:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:123456789"] options:@{} completionHandler:nil];
 }
 
 - (IBAction)directions:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://maps.apple.com/maps?daddr=51.501364,-0.1418899999999894"] options:@{} completionHandler:nil];
 }
+
 @end

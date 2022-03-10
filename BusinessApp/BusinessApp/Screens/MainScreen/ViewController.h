@@ -11,6 +11,7 @@
 - (IBAction)portfolioTapped:(id)sender;
 - (IBAction)aboutUsTapped:(id)sender;
 - (IBAction)contactUsTapped:(id)sender;
+- (IBAction)socialBtnTapped:(id)sender;
 
 @end
 

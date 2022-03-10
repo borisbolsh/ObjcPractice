@@ -21,6 +21,9 @@
 }
 
 
+- (IBAction)socialBtnTapped:(id)sender {
+}
+
 - (IBAction)contactUsTapped:(id)sender {
     [(UITabBarController *) self.tabBarController setSelectedIndex:4];
 }

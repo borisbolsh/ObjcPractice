@@ -18,7 +18,16 @@
 		4536D15627CD4DDE00EDFE0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4536D15527CD4DDE00EDFE0B /* Assets.xcassets */; };
 		4536D15927CD4DDE00EDFE0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4536D15727CD4DDE00EDFE0B /* LaunchScreen.storyboard */; };
 		4536D15C27CD4DDE00EDFE0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4536D15B27CD4DDE00EDFE0B /* main.m */; };
+		4560159827D8657200790D99 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4560159727D8657200790D99 /* MapPin.m */; };
+		4560159B27D87B0700790D99 /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4560159A27D87B0700790D99 /* EmailViewController.m */; };
+		4574C16C27D9BE46007E055E /* SocialTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4574C16B27D9BE46007E055E /* SocialTableViewController.m */; };
+		4574C17327D9C394007E055E /* SocialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4574C17227D9C394007E055E /* SocialTableViewCell.m */; };
+		4574C17627D9C5F8007E055E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4574C17527D9C5F8007E055E /* WebViewController.m */; };
+		4574C17827D9C62D007E055E /* Social.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4574C17727D9C62D007E055E /* Social.plist */; };
 		457F6D6627D54C8D00EE1478 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457F6D6527D54C8D00EE1478 /* AboutViewController.m */; };
+		45C8092927D93555008E4ECB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C8092827D93555008E4ECB /* WebKit.framework */; };
+		45C8092B27D9355C008E4ECB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C8092A27D9355C008E4ECB /* MessageUI.framework */; };
+		45C8092D27D93565008E4ECB /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C8092C27D93565008E4ECB /* Accounts.framework */; };
 		45E62EAA27D7E7B0002D285A /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E62EA927D7E7B0002D285A /* ContactViewController.m */; };
 		45E62EAD27D7E984002D285A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E62EAC27D7E984002D285A /* MapKit.framework */; };
 		45F70C7927D5D0CB0018601C /* PortfolioCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F70C7827D5D0CB0018601C /* PortfolioCollectionViewController.m */; };
@@ -45,8 +54,22 @@
 		4536D15827CD4DDE00EDFE0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4536D15A27CD4DDE00EDFE0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4536D15B27CD4DDE00EDFE0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4560159627D8657200790D99 /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		4560159727D8657200790D99 /* MapPin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
+		4560159927D87B0700790D99 /* EmailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
+		4560159A27D87B0700790D99 /* EmailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
+		4574C16A27D9BE46007E055E /* SocialTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialTableViewController.h; sourceTree = "<group>"; };
+		4574C16B27D9BE46007E055E /* SocialTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialTableViewController.m; sourceTree = "<group>"; };
+		4574C17127D9C394007E055E /* SocialTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialTableViewCell.h; sourceTree = "<group>"; };
+		4574C17227D9C394007E055E /* SocialTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialTableViewCell.m; sourceTree = "<group>"; };
+		4574C17427D9C5F8007E055E /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		4574C17527D9C5F8007E055E /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		4574C17727D9C62D007E055E /* Social.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Social.plist; sourceTree = "<group>"; };
 		457F6D6427D54C8D00EE1478 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		457F6D6527D54C8D00EE1478 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		45C8092827D93555008E4ECB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		45C8092A27D9355C008E4ECB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		45C8092C27D93565008E4ECB /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		45E62EA827D7E7B0002D285A /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
 		45E62EA927D7E7B0002D285A /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 		45E62EAC27D7E984002D285A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -61,6 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C8092D27D93565008E4ECB /* Accounts.framework in Frameworks */,
+				45C8092B27D9355C008E4ECB /* MessageUI.framework in Frameworks */,
+				45C8092927D93555008E4ECB /* WebKit.framework in Frameworks */,
 				45E62EAD27D7E984002D285A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,23 +128,62 @@
 		4536D14827CD4DDC00EDFE0B /* BusinessApp */ = {
 			isa = PBXGroup;
 			children = (
-				4536D14927CD4DDC00EDFE0B /* AppDelegate.h */,
-				4536D14A27CD4DDC00EDFE0B /* AppDelegate.m */,
-				4536D14C27CD4DDC00EDFE0B /* SceneDelegate.h */,
-				4536D14D27CD4DDC00EDFE0B /* SceneDelegate.m */,
-				4536D14F27CD4DDC00EDFE0B /* ViewController.h */,
-				4536D15027CD4DDC00EDFE0B /* ViewController.m */,
-				45E62EA727D7E708002D285A /* ContactUs */,
-				45F70C7027D5C5270018601C /* Portfolio */,
-				457F6D6327D54A3700EE1478 /* Aboutus */,
-				4502ABE527D07D0B00B4F60E /* Services */,
+				4574C16F27D9BE88007E055E /* App */,
+				4574C17027D9BEAB007E055E /* Screens */,
 				4536D15227CD4DDC00EDFE0B /* Main.storyboard */,
-				4536D15527CD4DDE00EDFE0B /* Assets.xcassets */,
 				4536D15727CD4DDE00EDFE0B /* LaunchScreen.storyboard */,
+				4536D15527CD4DDE00EDFE0B /* Assets.xcassets */,
 				4536D15A27CD4DDE00EDFE0B /* Info.plist */,
 				4536D15B27CD4DDE00EDFE0B /* main.m */,
 			);
 			path = BusinessApp;
+			sourceTree = "<group>";
+		};
+		4574C16D27D9BE4C007E055E /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				4574C16A27D9BE46007E055E /* SocialTableViewController.h */,
+				4574C16B27D9BE46007E055E /* SocialTableViewController.m */,
+				4574C17127D9C394007E055E /* SocialTableViewCell.h */,
+				4574C17227D9C394007E055E /* SocialTableViewCell.m */,
+				4574C17427D9C5F8007E055E /* WebViewController.h */,
+				4574C17527D9C5F8007E055E /* WebViewController.m */,
+				4574C17727D9C62D007E055E /* Social.plist */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
+		4574C16E27D9BE72007E055E /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4536D14F27CD4DDC00EDFE0B /* ViewController.h */,
+				4536D15027CD4DDC00EDFE0B /* ViewController.m */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		4574C16F27D9BE88007E055E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4536D14927CD4DDC00EDFE0B /* AppDelegate.h */,
+				4536D14A27CD4DDC00EDFE0B /* AppDelegate.m */,
+				4536D14C27CD4DDC00EDFE0B /* SceneDelegate.h */,
+				4536D14D27CD4DDC00EDFE0B /* SceneDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4574C17027D9BEAB007E055E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4574C16E27D9BE72007E055E /* MainScreen */,
+				45E62EA727D7E708002D285A /* ContactUs */,
+				45F70C7027D5C5270018601C /* Portfolio */,
+				457F6D6327D54A3700EE1478 /* Aboutus */,
+				4502ABE527D07D0B00B4F60E /* Services */,
+				4574C16D27D9BE4C007E055E /* Social */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		457F6D6327D54A3700EE1478 /* Aboutus */ = {
@@ -135,6 +200,10 @@
 			children = (
 				45E62EA827D7E7B0002D285A /* ContactViewController.h */,
 				45E62EA927D7E7B0002D285A /* ContactViewController.m */,
+				4560159627D8657200790D99 /* MapPin.h */,
+				4560159727D8657200790D99 /* MapPin.m */,
+				4560159927D87B0700790D99 /* EmailViewController.h */,
+				4560159A27D87B0700790D99 /* EmailViewController.m */,
 			);
 			path = ContactUs;
 			sourceTree = "<group>";
@@ -142,6 +211,9 @@
 		45E62EAB27D7E984002D285A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45C8092C27D93565008E4ECB /* Accounts.framework */,
+				45C8092A27D9355C008E4ECB /* MessageUI.framework */,
+				45C8092827D93555008E4ECB /* WebKit.framework */,
 				45E62EAC27D7E984002D285A /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -216,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45100E9927D152B8005576CB /* ServicesList.plist in Resources */,
+				4574C17827D9C62D007E055E /* Social.plist in Resources */,
 				4536D15927CD4DDE00EDFE0B /* LaunchScreen.storyboard in Resources */,
 				4536D15627CD4DDE00EDFE0B /* Assets.xcassets in Resources */,
 				4536D15427CD4DDC00EDFE0B /* Main.storyboard in Resources */,
@@ -229,13 +302,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4560159B27D87B0700790D99 /* EmailViewController.m in Sources */,
+				4560159827D8657200790D99 /* MapPin.m in Sources */,
 				4502ABE827D07D4400B4F60E /* ServicesTableViewController.m in Sources */,
 				45F70C7927D5D0CB0018601C /* PortfolioCollectionViewController.m in Sources */,
+				4574C16C27D9BE46007E055E /* SocialTableViewController.m in Sources */,
 				4536D15127CD4DDC00EDFE0B /* ViewController.m in Sources */,
 				45F70C7C27D5D1C90018601C /* PortfolioCollectionViewCell.m in Sources */,
 				457F6D6627D54C8D00EE1478 /* AboutViewController.m in Sources */,
 				4502ABEE27D07D9700B4F60E /* ServiceViewController.m in Sources */,
 				4536D14B27CD4DDC00EDFE0B /* AppDelegate.m in Sources */,
+				4574C17327D9C394007E055E /* SocialTableViewCell.m in Sources */,
+				4574C17627D9C5F8007E055E /* WebViewController.m in Sources */,
 				4536D15C27CD4DDE00EDFE0B /* main.m in Sources */,
 				4536D14E27CD4DDC00EDFE0B /* SceneDelegate.m in Sources */,
 				45E62EAA27D7E7B0002D285A /* ContactViewController.m in Sources */,
